@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>88Sales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./input.css" />
+    <script
+      src="https://kit.fontawesome.com/8af2b4b44b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">85Sales</a>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="form-control">
+            <input
+              type="text"
+              placeholder="Search"
+              class="input input-bordered w-24 md:w-auto"
+            />
+          </div>
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              </div>
+            </label>
+            <ul
+              tabindex="0"
+              class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Baner section -->
+      <section
+        class="flex items-center justify-evenly"
+        style="background-color: #ced47f5b"
+      >
+        <div class="text-center">
+          <div>
+            <p class="font-500">---SALE FEVER---</p>
+            <h1 class="font-extrabold text-[58px]">
+              Purchase TK 200 or above & get
+              <span style="color: #e527b2">20% off</span>
+            </h1>
+          </div>
+          <div class="flex items-center justify-center">
+            <p class="mr-2">Use Promo Code</p>
+            <button class="btn btn-primary btn-secondary">Sell 200</button>
+          </div>
+        </div>
+        <div>
+          <img class="w-[100]" src="./images/Summer 1.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Kitchenware section -->
+      <section class="md:container md:mx-auto flex justify-evenly mt-[100px]">
+        <div>
+          <div>
+            <div>
+              <h1>Kitchenware</h1>
+            </div>
+            <div class="grid grid-cols-3 gap-20">
+              <div class="card w-64 bg-base-100 shadow-xl productCard">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod1.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating mt-2">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                      checked
+                    />
+                  </div>
+                  <p id="1stproductName" class="card-title">K. Accessories</p>
+                  <div class="card-actions flex flex-row">
+                    <p><span id="1stproductPrice">39.00</span></p>
+                    <p>TK</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-64 bg-base-100 shadow-xl productCard">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod2.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating mt-2">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                      checked
+                    />
+                  </div>
+                  <p id="1stproductName" class="card-title">K. Accessories</p>
+                  <div class="card-actions flex flex-row">
+                    <p><span id="1stproductPrice">25.00</span></p>
+                    <p>TK</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-64 bg-base-100 shadow-xl productCard">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod3.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating mt-2">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                      checked
+                    />
+                  </div>
+                  <p id="2ndproductName" class="card-title">Home Cooker</p>
+                  <div class="card-actions flex flex-row">
+                    <p><span id="1stproductPrice">49.00</span></p>
+                    <p>TK</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt[25px]">
+            <div>
+              <h1>Sportswear</h1>
+              <div class="grid grid-cols-3 gap-20">
+                <div class="card w-64 bg-base-100 shadow-xl productCard">
+                  <figure class="px-10 pt-10">
+                    <img
+                      src="./images/prod4.png"
+                      alt="Shoes"
+                      class="rounded-xl"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating mt-2">
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                        checked
+                      />
+                    </div>
+                    <p id="thirdproductName" class="card-title">
+                      Sports Back Cap
+                    </p>
+                    <div class="card-actions flex flex-row">
+                      <p><span id="1stproductPrice">39.00</span></p>
+                      <p>TK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card w-64 bg-base-100 shadow-xl productCard">
+                  <figure class="px-10 pt-10">
+                    <img
+                      src="./images/prod5.png"
+                      alt="Shoes"
+                      class="rounded-xl"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating mt-2">
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                        checked
+                      />
+                    </div>
+                    <p id="forthproductName" class="card-title">
+                      Full Jersey Set
+                    </p>
+                    <div class="card-actions flex flex-row">
+                      <p><span id="1stproductPrice">69.00</span></p>
+                      <p>TK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card w-64 bg-base-100 shadow-xl productCard">
+                  <figure class="px-10 pt-10">
+                    <img
+                      src="./images/prod6.png"
+                      alt="Shoes"
+                      class="rounded-xl"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating mt-2">
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-yellow-200"
+                        checked
+                      />
+                    </div>
+                    <p id="fifthproductName" class="card-title">Sports cates</p>
+                    <div class="card-actions flex flex-row">
+                      <p><span id="1stproductPrice">139.00</span></p>
+                      <p>TK</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt[25px]">
+            <div>
+              <h1>Furniture</h1>
+            </div>
+            <div class="grid grid-cols-3 gap-20">
+              <div class="card w-64 bg-base-100 shadow-xl productCard">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod7.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating mt-2">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                      checked
+                    />
+                  </div>
+                  <p id="1stproductName" class="card-title">
+                    Single Relax Chair
+                  </p>
+                  <div class="card-actions flex flex-row">
+                    <p><span id="1stproductPrice">189.00</span></p>
+                    <p>TK</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-64 bg-base-100 shadow-xl productCard">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod8.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating mt-2">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                      checked
+                    />
+                  </div>
+                  <p id="sixthproductName" class="card-title">Children play</p>
+                  <div class="card-actions flex flex-row">
+                    <p><span id="1stproductPrice">299.00</span></p>
+                    <p>TK</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-64 bg-base-100 shadow-xl productCard">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod9.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating mt-2">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-yellow-200"
+                      checked
+                    />
+                  </div>
+                  <p id="seventhproductName" class="card-title">
+                    Flexible Sofa
+                  </p>
+                  <div class="card-actions flex flex-row">
+                    <p><span id="1stproductPrice">399.00</span></p>
+                    <p>TK</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <div>
+            <h1 class="font-500">Have coupon?</h1>
+          </div>
+          <div class="flex items-center justify-center">
+            <input class="mr-2" type="text" placeholder="Coupon Code" />
+            <button class="btn primary-butt">Apply</button>
+          </div>
+          <div>
+            <ol id="product-list"></ol>
+          </div>
+
+          <div>
+            <p>Total price : <span id="total-price">0</span></p>
+            <p id="discount">Discount :</p>
+            <p id="total">Total :</p>
+            <button class="primary-butt">Make Purchase</button>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+    </main>
+    <footer></footer>
+    <script src="./index.js"></script>
+    <script src="./JS/app.js"></script>
+  </body>
+</html>
